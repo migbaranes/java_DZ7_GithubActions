@@ -17,16 +17,17 @@ public class StatisticsServiceTest {
 
         Assertions.assertEquals(expected, actual);
     }
-//
-//    @Test
-//    void equalIncome() {
-//        StatisticsService service = new StatisticsService();
-//
-//        long[] incomesInBillions = {12, 12, 12, 12, 12, 12, 12, 12, 12, 12};
-//        long expected = service.findMax(incomesInBillions);
-//
-//        long actual = 12;
-//
-//        Assertions.assertEquals(expected, actual);
-//    }
+
+    @Test
+    void equalIncome() {
+        StatisticsService service = new StatisticsService();
+
+        long[] incomesInBillions = {12, 12, 12, 12, 12, 12, 12, 12, 13, 12};
+        long expected = service.findMax(incomesInBillions);
+
+        long actual = 13;
+
+        Assertions.assertEquals(expected, actual);
+    }
+
 }
